@@ -1,0 +1,3593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    <style>
+
+html {
+            scroll-behavior: smooth;
+        }
+                body {
+                    margin: 0 40px;
+                    padding: 10px;
+                    background: yellow;
+                    justify-content: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: medium;
+                }
+        
+                .Red {
+                    color:  red;
+                    font-size: xx-large;
+                }
+        
+                .name {
+                    margin: 0px;
+                    
+                }
+        
+                .Input {
+                    padding: 20px;
+                    background-color: yellow;
+                    border: solid red;
+                    border-radius: 4px;
+                    width: 50%;
+                    margin:0px;
+                    height: 30px;
+                }
+        
+                .Input ::placeholder {
+                    color: white;
+                }
+        
+                .submit {
+                    margin: 5px;
+                    border: none;
+                    background-color: rgb(228, 45, 32);
+                    color: white;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+        
+                .submit:hover {
+                    background-color: rgb(243, 143, 136);
+                    box-shadow: inset 0 0 12px rgb(75, 72, 72),
+                                         0 0 12px black;
+                }
+        
+                .stories {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+        
+                fieldset {
+                    width: fit-content;
+                    height: fit-content;
+                }
+        
+                .footer {
+                    margin: 5%;
+                    border: none;
+                    width: 40%;
+                    background-color: red;
+                    display: block;
+                    justify-content: center;	
+                    cursor: none;
+                }
+        
+                .Andy {
+                    color: aliceblue;
+                }
+        
+                hr {
+                    width: 60%;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+        
+                .contacts {
+                    display: inline;
+                    justify-items: center;
+                }
+        
+        /* Html 'a' Styling */
+        
+        a {
+            text-decoration: none;
+            color: black;
+            flex-wrap: wrap;
+        }
+        
+        .places {
+            width: 30%;
+            border: none;
+            margin: 2px;
+            padding: 10px;
+            overflow: hidden;
+        
+        }
+        
+        .Adv {
+            width: 80%;
+            text-align: center;
+            height: 300px;
+            margin: 10px;
+            background-color: yellow;
+            overflow: hidden;
+            box-shadow: 0 0 30px 0 black;
+        }
+        
+        .flex {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        
+        .gray {
+            background-color: rgb(221, 221, 7);
+        }
+        
+        .up {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            width: 40px;
+            border-radius: 50%;
+            background: rgb(228, 8, 8, 0.7);
+        
+        }
+        
+        td {
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        footer {
+            background-color:rgb(255, 0, 0, 0.4);
+            margin: 20px 0 0 0;
+            width: 90%;
+            padding: 20px;
+            border-radius: 2px;
+        
+        }
+.Active {
+    width: 90%;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 30px 0;
+    margin: 20px 0;
+    box-shadow: 0 0 10px black;
+}
+
+.Dark {
+    width: 90%;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.7 );
+    border-radius: 5px;
+    padding: 30px 0;
+    margin: 20px 0;
+    box-shadow: 0 0 10px black;
+}
+</style>
+
+
+	<title> Taxi Rank info</title>
+
+
+</head>
+
+
+
+<body>
+
+	<header class="Active">
+		<h1 id="up" class="Name">Taxi Info</h1>
+
+		<h3 class="Slogan">Know Where To <span class="Red">GO</span>>  >></h3>
+
+<!---------------- Logins Buttons ---------------->
+		
+		<Button class="submit reg">Register</Button>
+
+		<button class="submit log">Login</button>
+
+		<a href=""><button class="submit">About</button></a>
+
+		<a href="#More"><button class="submit">More</button></a>
+
+		<a href="#up"><button class="submit up">^</button></a>
+
+		<br>
+
+		<br>
+
+
+<!--------------- Locations Buttons ------------->
+	</header>
+	<main class="cen">
+		<!--<input class="Input" type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+		<ul id="myMenu">-->
+            <div class="Dark">
+                <div>
+                    <h2>Active Loactions</h2>
+			
+                    <a href="#Midrand">
+                        <button class=" places submit reg">Midrand</button>
+                    </a>
+        
+                    <a href="#Alexander">
+                        <button class=" places submit reg">Alexander</button>
+                    </a>
+        
+                    <a href="#Tembisa">
+                        <button class=" places submit reg">Tembisa</button>
+                    </a>
+        
+                </div>
+            </div>
+
+<div class="Active">
+    <div>
+        <h2>Provinces</h2>
+    </div>
+    
+			<a href="#Gauteng">
+				<button class=" places submit">Gauteng</button>
+			</a>
+
+			<a href="#Free state">
+				<button class=" places submit reg">Free State</button>
+			</a>
+
+			<a href="#Limpopo">
+				<button class=" places submit reg">Limpopo</button>
+			</a>
+			
+			<a href="#Mpumalanga">
+				<button class=" places submit">Mpumalanga</button>
+			</a>
+			
+			<a href="#Kwazulu Natal">
+				<button class=" places submit">Kwazulu Natal</button>
+			</a>
+
+			<a href="#North West">
+				<button class=" places submit">North West</button>
+			</a>
+			
+			<a href="#Northern Cape">
+				<button class="places submit">Northern Cape</button>
+			</a>
+			
+			<a href="#Eastern Cape">
+				<button class=" places submit">Eastern Cape</button>
+			</a>
+
+			<a href="#Western Cape">
+				<button class=" places submit">Western Cape</button>
+			</a>
+</div>
+
+<!--------------------  first Advert   --------------------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+		<br>
+		</div>
+    
+<!--------- Gauteng Buttons --------->
+
+<div class="Active">
+    <Div>
+        <h2 id="Gauteng" class="" >Gauteng</h2>
+    </Div>
+    <div>
+
+<!---------- Johannesburg ---------------------->
+
+        <a href="#Midrand"><button class="submit">Johannesburg</button></a>
+
+<!---------- Ekurhuleni -------------------------->
+
+        <a href="#Tembisa"><button class="submit">Ekurhuleni</button></a>
+
+<!------------- Tshwane ------------------------->
+
+        <a href="#Tshwane"><button class="submit">Tshwane</button></a>
+
+<!---------------- Metsweding ------------------>
+
+        <a href="#Metsweding"><button class="submit">Metsweding</button></a>
+
+<!-------------- Sedibeng ------------------------->
+
+        <a href="#Sedibeng"><button class="submit">Sedibeng</button></a>
+
+<!-------------- West Rand ---------------------->
+
+        <a href="#West Rand"><button class="submit">West Rand</button></a>
+
+<!-------------- Emfuleni -------------------------->
+
+        <a href="#Emfuleni"><button class="submit">Emfuleni</button></a>
+
+        <!-------------- Merafong -------------------------->
+
+        <a href="#Merafong"><button class="submit">Merafong</button></a>
+
+        <!-------------- Lesedi -------------------------->
+
+        <a href="#Lesedi"><button class="submit">Lesedi</button></a>
+
+        <!-------------- Midvaal -------------------------->
+
+        <a href="#Midvaal"><button class="submit">Midvaal</button></a>
+
+        <!-------------- Mogale -------------------------->
+
+        <a href="#Mogale"><button class="submit">Mogale</button></a>
+
+    </div>
+
+</div>
+
+
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+        
+
+<!-------- Midrnand ------------------>
+
+<div class="Midrand">
+
+<div class="Active">
+    <div id="Midrand" class="">
+        <h2>Midrand</h2>
+        <h4>From 18 July 2022</h4>
+    </div>
+
+<!------- Local Midrand-->
+
+
+    <div>
+
+        <a href="#IvoryPark">
+            <button class="submit">Ivory Park 2</button>
+        </a>
+
+        <a href="#Kaalfontein">
+            <button class="submit">Kaalfontein</button>
+        </a>
+
+        <a href="#Mayibuye">
+            <button class="submit">Mayibuye</button>
+        </a>
+
+        <a href="#Score">
+            <button class="submit">Ma15/Score</button>
+        </a>
+
+        <a href="#Phumulani">
+            <button class="submit">Phumulani</button>
+        </a>
+
+        <a href="#Kanana">
+            <button class="submit">Kanana</button>
+        </a>
+
+        <a href="#Winnie">
+            <button class="submit">Winnie Mande</button>
+        </a>
+
+        <a href="#Clayville">
+            <button class="submit">Clayville</button>
+        </a>
+
+    </div>
+
+</div>
+
+    <div class="Active">
+
+<!---------  Midrand Route ------------>
+
+        <div>
+            <h2>Midrand Route</h2>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <td>
+                        <h3>.   Route Name  .</h3>
+                    </td>
+                    <td>
+                        <h3>.   To  .</h3>
+                    </td>
+                    <td>
+                        <h3>.  Cost     .</h3>
+                    </td>
+                </thead>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Stop 16
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody class="">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        RMM
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        VodaWorld
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Thornhill / Bp
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        Co-Operate Park
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Discem
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R21
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Noordwyk
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Vodaworld
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="">
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R21
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Noordwyk
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Vodaworld
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R21
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Noordwyk
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Vodaworld
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="">
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R21
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        Noordwyk
+                    </td>
+                    <td>
+                        R19
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Kaalfontein
+                    </td>
+                    <td>
+                        Vodaworld
+                    </td>
+                    <td>
+                        R14
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        Co-Operate Park
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Discem
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Winnie Mandela
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R21
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Winnie Mandela
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R22
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Winnie Mandela
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Tswelopele
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 3/score
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 3/score
+                    </td>
+                    <td>
+                        Kyalami
+                    </td>
+                    <td>
+                        R22
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 3/score
+                    </td>
+                    <td>
+                        Noordwyk
+                    </td>
+                    <td>
+                        R20
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 3/score
+                    </td>
+                    <td>
+                        Vorna Valley
+                    </td>
+                    <td>
+                        R20
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 3/Score
+                    </td>
+                    <td>
+                        VodaWorld
+                    </td>
+                    <td>
+                        R20
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 3/Score
+                    </td>
+                    <td>
+                        WaterFall
+                    </td>
+                    <td>
+                        R20
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 3/Score
+                    </td>
+                    <td>
+                        Sunderland Ridge
+                    </td>
+                    <td>
+                        R22
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Mayibuye
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Swaz Inn
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R17
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ematsheni
+                    </td>
+                    <td>
+                        Midrand
+                    </td>
+                    <td>
+                        R16
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Diepsloot
+                    </td>
+                    <td>
+                        R25
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Diepsloot
+                    </td>
+                    <td>
+                        R25
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Diepsloot
+                    </td>
+                    <td>
+                        R25
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Olieven
+                    </td>
+                    <td>
+                        R24
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Forest Hill
+                    </td>
+                    <td>
+                        R24
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Midrand 
+                    </td>
+                    <td>
+                        Diepsloot
+                    </td>
+                    <td>
+                        R25
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 2
+                    </td>
+                    <td>
+                        Attridgeville
+                    </td>
+                    <td>
+                        R28
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Ivory Park 4
+                    </td>
+                    <td>
+                        Attridgeville
+                    </td>
+                    <td>
+                        R28
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Ivory Park 5
+                    </td>
+                    <td>
+                        Attridgeville
+                    </td>
+                    <td>
+                        R28
+                    </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-------- Second Advert ------->
+
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+<!------------- Olifantsfontein Routes-->
+<div class="Active">
+
+    <div>
+        <h2>Olifantsfontein Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R12
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Tswelopele & ext 8
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R12
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Clayville Ext 45
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory park 3 / Score
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R14
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Olifantsfontein
+                </td>
+                <td>
+                    R14
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-------- Third Advert-->
+
+
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+<!------------- Germiston Routes-->
+
+
+
+<div class="Active">
+    <div>
+        <h2>Germiston Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3/ Score
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    26
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kanana 4
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 5
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Midrand
+                </td>
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 3
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kanana 5
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    Limbro Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    East Gate
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3
+                </td>
+                <td>
+                    East Gate
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kanana 4
+                </td>
+                <td>
+                    East Gate
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 5
+                </td>
+                <td>
+                    East Gate
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    East Gate
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-------- Fourth Advert ------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+<!------------- Germiston Routes ---------------------->
+
+<div class="Active">
+    <div>
+        <h2>Randburg & Fourways Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+    
+    
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+    
+    
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3/ Score
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kaalfontein & ext 5
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Klipfontein
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3/ Score
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Klipfontein
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & Ext 45
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Midrand
+                </td>
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 3 /Score
+                </td>
+                <td>
+                    HoneyDew
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    HoneyDew
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Midrand
+                </td>
+                <td>
+                    HoneyDew
+                </td>
+                <td>
+                    R27
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3 /Score
+                </td>
+                <td>
+                    Cosmo City
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Cosmo City
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Midrand
+                </td>
+                <td>
+                    Cosmo City
+                </td>
+                <td>
+                    R27
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kempton Park
+                </td>
+                <td>
+                    Diepsloot
+                </td>
+                <td>
+                    R32
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--------------------- Fifth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<!------------- Alexander Routes ---------------------->
+
+<div class="Active">
+    <div>
+        <h2>Alexander & Sandton Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+    
+    
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+    
+    
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Tswelopele
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3/ Score
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Clayville Ext 45
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4 & 5
+                </td>
+                <td>
+                    Alexander <br> Sandton <br> Rivonia <br> Sunninghill
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Woodmead
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3
+                </td>
+                <td>
+                    Woodmead
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kaalfontein
+                </td>
+                <td>
+                    Woodmead
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+<!--------------------- Sixth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+
+<!------------- Johannesburg Routes ---------------------->
+
+<div class="Active">
+    <div>
+        <h2>Johannesburg Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+    
+    
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+    
+    
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Tswelopele
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 3/ Score
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & Ext 45
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Clayville
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4 & 5
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Irene
+                </td>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R30
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Rosebank
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 3/Score
+                </td>
+                <td>
+                    Rosebank
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & ext 45
+                </td>
+                <td>
+                    Rosebank
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--------------------- Seventh Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<!---------  Pretoria & Centurion Route ------------>
+
+<div class="Active">
+    <div>
+        <h2>Midrand & Centurion Routes</h2>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>.   Route Name  .</h3>
+                </td>
+                <td>
+                    <h3>.   To  .</h3>
+                </td>
+                <td>
+                    <h3>.  Cost     .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Ivory Park 3 / Score
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & ext 45
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4 & 5
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Klipfontein
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Tswelopele
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Phumulani Mall
+                </td>
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Menlyn
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ivory Park 3 / Score
+                </td>
+                <td>
+                    Menlyn
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & ext 45
+                </td>
+                <td>
+                    Menlyn
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    Menlyn
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Ivory Park 3 / Score
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & ext 45
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4 & 5
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Centurion Mall
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Ivory Park 3 / Score
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kaalfontein & ext 45
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Kanana 4 & 5
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    Shoprite
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Shoprite & Midstream
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="">
+                <td>
+                    Tswelopele
+                </td>
+                <td>
+                    Shoprite & Midstream
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ivory Park 2
+                </td>
+                <td>
+                    Co-operate park
+                </td>
+                <td>
+                    R19
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Winnie Mandela
+                </td>
+                <td>
+                    Centurion Mall Lake
+                </td>
+                <td>
+                    R21
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Phumulani Mall
+                </td>
+                <td>
+                    Elardus Park
+                </td>
+                <td>
+                    R17
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Phumulani Mall
+                </td>
+                <td>
+                    Irene
+                </td>
+                <td>
+                    R17
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+<Div>
+    
+
+<!--------------------- Eighth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+
+    <!------------   Ivory park Taxi Rand  ------------->
+
+<div class="Active">
+    <h2 id="IvoryPark">Ivory Park 2 Taxi Rank</h1>
+            <table>
+                <thead>
+                    <td class="space ">Name</td>
+                    <td class="">Passing</td>
+                    <td class="">Cost</td>
+                </thead>
+
+                    <tbody class="gray ">
+                        <td class="">Stop 16</td>
+                        <td class="">Midrand</td>
+                        <td class="">R17</td>
+                    </tbody>
+        
+        
+        
+                    <tbody class=" ">
+                        <td class="">RMM</td>
+                        <td class="">Midrand</td>
+                        <td class="">R17</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Olifantsfontein</td>
+                        <td class=""></td>
+                        <td class="">R14</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Waterfall</td>
+                        <td class="">Midrand</td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Kyalami</td>
+                        <td class=""></td>
+                        <td class="">R21</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Vornavelly</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Midrand</td>
+                        <td class=""></td>
+                        <td class="">R16</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Noordwyk</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Vodaworld</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Germiston</td>
+                        <td class=""></td>
+                        <td class="">R26</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Limbro Park</td>
+                        <td class=""></td>
+                        <td class="">R22</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">East Gate</td>
+                        <td class=""></td>
+                        <td class="">R24</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Randburg</td>
+                        <td class=""></td>
+                        <td class="">R25</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Fourways</td>
+                        <td class=""></td>
+                        <td class="">R24</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">HoneyDew</td>
+                        <td class=""></td>
+                        <td class="">R28</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Cosmo City</td>
+                        <td class=""></td>
+                        <td class="">R28</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Alexander</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Sandton</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Rivonia</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Sunninghill</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Woodmead</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Johannesburg</td>
+                        <td class=""></td>
+                        <td class="">R25</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Rosebank</td>
+                        <td class=""></td>
+                        <td class="">R24</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Pretoria</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Menlyn</td>
+                        <td class=""></td>
+                        <td class="">R28</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Centurion Mall</td>
+                        <td class=""></td>
+                        <td class="">R21</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="gray ">
+                        <td class="">Shoprite Centurion</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                    
+        
+                    <tbody class="">
+                        <td class="">Co-oparate park</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+        
+                </table> 
+</div>
+
+
+
+<!--------------------- Ninth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<!-------- Kaalfontein Taxis ------->
+
+<div id="Kaalfontein" class="Active">
+    <h2>Kaalfontein Taxis</h2>
+
+    <table>
+        <thead>
+            <td class="space ">Name</td>
+            <td class="">Passing</td>
+            <td class="">Price</td>
+        </thead>
+<tbody class="gray ">
+    <td class="">Olifantsfontein</td>
+    <td class=""></td>
+    <td class="">R14</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Waterfall</td>
+    <td class="">Midrand</td>
+    <td class="">R19</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Kyalami</td>
+    <td class=""></td>
+    <td class="">R21</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Vornavelly</td>
+    <td class=""></td>
+    <td class="">R19</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Midrand</td>
+    <td class=""></td>
+    <td class="">R16</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Noordwyk</td>
+    <td class=""></td>
+    <td class="">R19</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Vodaworld</td>
+    <td class=""></td>
+    <td class="">R19</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Germiston</td>
+    <td class=""></td>
+    <td class="">R26</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Limbro Park</td>
+    <td class=""></td>
+    <td class="">R22</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">East Gate</td>
+    <td class=""></td>
+    <td class="">R24</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Randburg</td>
+    <td class=""></td>
+    <td class="">R25</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Fourways</td>
+    <td class=""></td>
+    <td class="">R24</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Alexander</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Sandton</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Rivonia</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Sunninghill</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Woodmead</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Johannesburg</td>
+    <td class=""></td>
+    <td class="">R25</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Rosebank</td>
+    <td class=""></td>
+    <td class="">R24</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Pretoria</td>
+    <td class=""></td>
+    <td class="">R23</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Menlyn</td>
+    <td class=""></td>
+    <td class="">R28</td>
+</tbody>
+
+
+
+<tbody class="">
+    <td class="">Centurion Mall</td>
+    <td class=""></td>
+    <td class="">R21</td>
+</tbody>
+
+
+
+<tbody class="gray ">
+    <td class="">Shoprite Centurion</td>
+    <td class=""></td>
+    <td class="">R19</td>
+</tbody>
+
+</table>
+</div>
+
+
+
+<!--------------------- Tenth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<!----------- Kanana Taxis ------>
+
+<div class="Active">
+
+    <h2 id="Kanana">Kanana Taxis </h1>
+        <div>  
+            <table>
+            <tbody class="">
+                <td class="">Germiston</td>
+                <td class=""></td>
+                <td class="">R26</td>
+            </tbody>
+            
+            
+            
+            <tbody class="gray ">
+                <td class="">Limbro Park</td>
+                <td class=""></td>
+                <td class="">R22</td>
+            </tbody>
+            
+            
+            
+            <tbody class="">
+                <td class="">East Gate</td>
+                <td class=""></td>
+                <td class="">R24</td>
+            </tbody>
+            
+            
+            <tbody class="gray ">
+                <td class="">Alexander</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+            
+            
+            
+            <tbody class="">
+                <td class="">Sandton</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+            
+            
+            
+            <tbody class="gray ">
+                <td class="">Rivonia</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+            
+            
+            
+            <tbody class="">
+                <td class="">Sunninghill</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+             
+            
+            <tbody class="gray">
+                <td class="">Johannesburg</td>
+                <td class=""></td>
+                <td class="">R25</td>
+            </tbody>
+            
+                
+            
+            
+            <tbody class="">
+                <td class="">Pretoria</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+            
+            
+            
+            <tbody class="">
+                <td class="">Centurion Mall</td>
+                <td class=""></td>
+                <td class="">R21</td>
+            </tbody>
+            
+            
+            
+            <tbody class="gray """>
+                <td class="">Shoprite Centurion</td>
+                <td class=""></td>
+                <td class="">R19</td>
+            </tbody>
+        </table>
+        </div>
+</div>
+
+
+
+<!--------------------- Eleventh Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<!--------- Mayibuye Taxis ------------>
+
+<div class="Active">
+    <div id="Mayibuye">
+        <h2>Mayibuye taxis </h1>
+        </div>
+            <div>
+                <table>
+                
+                    <tbody class="">
+                        <td class="">Midrand</td>
+                        <td class=""></td>
+                        <td class="">R16</td>
+                    </tbody>
+                    
+                    
+                    <tbody class="gray ">
+                        <td class="">Rundburg</td>
+                        <td class=""></td>
+                        <td class="">R25</td>
+                    </tbody>
+                
+                    <tbody class="">
+                        <td class="">Alexander</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+                
+                    <tbody class="">
+                        <td class="">Sandton</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+                
+                    <tbody class="">
+                        <td class="">Germiston</td>
+                        <td class=""></td>
+                        <td class="">R26</td>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody class="">
+                        <td class="">Fourways</td>
+                        <td class=""></td>
+                        <td class="">R24</td>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody class="gray ">
+                        <td class="">Rivonia</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody class="">
+                        <td class="">Sunninghill</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+                     
+                    
+                    <tbody class="">
+                        <td class="">Johannesburg</td>
+                        <td class=""></td>
+                        <td class="">R25</td>
+                    </tbody>
+                    
+                        
+                    
+                    
+                    <tbody class="">
+                        <td class="">Pretoria</td>
+                        <td class=""></td>
+                        <td class="">R23</td>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody class="">
+                        <td class="">Centurion Mall</td>
+                        <td class=""></td>
+                        <td class="">R21</td>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody class="gray ">
+                        <td class="">Shoprite Centurion</td>
+                        <td class=""></td>
+                        <td class="">R19</td>
+                    </tbody>
+                    </table>
+            </div>
+    
+            <!----------------------------- Mayibuye Local---------------- ----->
+            
+            <div>
+                <div>
+                    <h2>Locals</h2>
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                            <td>
+                                <h3>Name</h3>
+                            </td>
+                            <td>
+                                <h3>Price</h3>
+                            </td>
+                        </thead>
+            
+                        <tbody class="">
+                            <td>
+                                Ivory Park
+                            </td>
+                            <td>
+                                <h2>R10</h2>
+                            </td>
+                        </tbody>
+            
+                        
+                        <tbody class="gray">
+                            <td>
+                                Tembisa
+                            </td>
+                            <td>
+                                <h2>R13</h2>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+</div>
+
+
+
+<!--------------------- Twelveth Advert ----------->
+<div class="flex Active">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+    <img src="./0.jpg" alt="">
+</div>
+
+
+<div class="Active">
+
+<!------- Ivory Park 3 / Score ------------------->
+
+<h2 id="Score">Ivory Park 3 / Score</h1>
+    <div>
+        <table>
+            <thead>
+                <td class="space ">
+                    <h2>Name.</h2>
+                </td>
+                <td class="">
+                    <h2>Passing.  </h2>
+                </td>
+                <td class="">
+                    <h2> Cost.</h2>
+                </td>
+            </thead>
+
+
+            <tbody class="gray ">
+                <td class="">Olifantsfontein</td>
+                <td class=""></td>
+                <td class="">R13</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Waterfall</td>
+                <td class="">Midrand</td>
+                <td class="">R20</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Kyalami</td>
+                <td class=""></td>
+                <td class="">R22</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Vornavelly</td>
+                <td class=""></td>
+                <td class="">R20</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Midrand</td>
+                <td class=""></td>
+                <td class="">R17</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Noordwyk</td>
+                <td class=""></td>
+                <td class="">R20</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Vodaworld</td>
+                <td class=""></td>
+                <td class="">R20</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Sunderlan ridged</td>
+                <td class=""></td>
+                <td class="">R25</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Germiston</td>
+                <td class=""></td>
+                <td class="">R26</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Limbro Park</td>
+                <td class=""></td>
+                <td class="">R22</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">East Gate</td>
+                <td class=""></td>
+                <td class="">R24</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Randburg</td>
+                <td class=""></td>
+                <td class="">R25</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Fourways</td>
+                <td class=""></td>
+                <td class="">R24</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">HoneyDew</td>
+                <td class=""></td>
+                <td class="">R28</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Cosmo City</td>
+                <td class=""></td>
+                <td class="">R28</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Alexander</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Sandton</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Rivonia</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Sunninghill</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Woodmead</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Johannesburg</td>
+                <td class=""></td>
+                <td class="">R25</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Rosebank</td>
+                <td class=""></td>
+                <td class="">R24</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Pretoria</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Menlyn</td>
+                <td class=""></td>
+                <td class="">R28</td>
+            </tbody>
+
+            
+
+            <tbody class="">
+                <td class="">Centurion Mall</td>
+                <td class=""></td>
+                <td class="">R21</td>
+            </tbody>
+
+            
+
+            <tbody class="gray ">
+                <td class="">Shoprite Centurion</td>
+                <td class=""></td>
+                <td class="">R19</td>
+            </tbody>
+
+
+        </table>
+
+</div>
+</div>
+<div>
+</div>
+
+<!-------------- Phumumali taxis ------->
+
+<div id="Phumulani" class="Active">
+
+    <table>
+        <div>
+            <h1>Phumlani Mall</h1>
+        </div>
+        <div>   
+            
+            
+            <tbody class="spacing">
+                <td class="">Pretoria</td>
+                <td class=""></td>
+                <td class="">R23</td>
+            </tbody>
+            
+            
+            
+            <tbody class="spacing">
+                <td class="">Irene</td>
+                <td class=""></td>
+                <td class="">R17</td>
+            </tbody>
+            
+            
+            
+            <tbody class="gray spacing">
+                <td class="">Elardus Park</td>
+                <td class=""></td>
+                <td class="">R17</td>
+            </tbody>
+        </table>    
+    
+    
+    <!----------------- Phumlani Locals --------------------->
+    
+    
+            <h2>Locals</h2>
+        <div>
+            <table>
+                <thead>
+                    <td>
+                        <h3>Name</h3>
+                    </td>
+                    <td>
+                        <h3>Price</h3>
+                    </td>
+                </thead>
+    
+                <tbody class="">
+                    <td>
+                        Ivory Park
+                    </td>
+                    <td>
+                        <h2>R10</h2>
+                    </td>
+                </tbody>
+    
+                
+                <tbody class="gray">
+                    <td>
+                        Tembisa
+                    </td>
+                    <td>
+                        <h2>R13</h2>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--------------- Tembisa ----------------->
+
+<div class="Active" id="Tembisa">
+<div>
+    <h2>Tembisa</h2>
+</div>
+<div>
+    <a href="#Oakmor"><button class="submit">Oakmor</button></a>
+
+    <a href="#Sangweni"><button class="submit">Sangweni</button></a>
+
+    <a href="#Birch Acres"><button class="submit">Birch Acres</button></a>
+
+    <a href="#Phomolong"><button class="submit">Phomolong</button></a>
+
+    <a href="#Plaza"><button class="submit">Plaza</button></a>
+
+    <a href="#TembisaMall"><button class="submit">Tembisa Mall</button></a>
+
+</div>
+</div>
+
+
+<!------------------- Oakmor Tembisa ----->
+<div id="Oakmor" class="Active">
+    <h2>
+        Oakmor
+    </h2>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>  Name   </h3>
+                </td>
+                <td>
+                    <h3>.  Cost  .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Menlyn
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Mamelodi
+                </td>
+                <td>
+                    R30
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Gashagasheng
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Centurion
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Bush
+                </td>
+                <td>
+                    R350
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Eco Park
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Highveld
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--------------- Sangweni Taxis -------------------->
+
+<div id="Sangweni" class="Active">
+<h1>Sangweni</h1>
+<div>
+    here
+</div>
+</div>
+
+
+
+<!--------------- Birch Acres Taxis -------------------->
+
+<div id="Birch Acres" class="Active">
+    <h1>Birch Acres</h1>
+    <div>
+        here
+    </div>
+    </div>
+    
+
+
+
+
+
+<!--------------- Phomolong Taxis -------------------->
+
+<div id="Phomolong" class="Active">
+    <h1>Phomolong</h1>
+    <div>
+        here
+    </div>
+    </div>
+
+
+
+
+
+<!--------------- Tembisa Plaza Taxis -------------------->
+
+<div id="Plaza" class="Active">
+    <h1>Plaza</h1>
+    <div>
+        here
+    </div>
+    </div>
+    
+
+
+
+<!--------------- Tembisa Mall Taxis -------------------->
+
+<div id="TembisaMall" class="Active">
+    <h1>Tembisa Mall</h1>
+    <div>
+        here
+    </div>
+    </div>
+
+<!-------- More Options ---------------------->
+    
+
+<div class="Active">
+    <div>
+        <h2>More Options</h2>
+    </div>
+    <div class="flex">
+        <div>
+            <a href="#Recruiting">
+                <button class="submit">Recruiting Agents</button>
+            </a>
+        </div>
+        <div>
+            <a href="#Wifi">
+                <button class="submit">Fibre / Wifi</button>
+            </a>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+	<main/>
+
+
+<footer class="Active">
+    <div id="More">
+        <h6> &copy Taxi info all rights reserved</h6>
+    </div>
+    <div>
+        <h6>if you want to do business with us, you can email us on asemahlenkwali@gmail.com</h6>
+    </div>
+</footer>
+	<script src="app.js"></script>
+</body>
+</html>
