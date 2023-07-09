@@ -52,9 +52,65 @@ html {
                     border-radius: 10px;
                     cursor: pointer;
                 }
-        
+                        
                 .submit:hover {
                     background-color: rgb(243, 143, 136);
+                    box-shadow: inset 0 0 12px rgb(75, 72, 72),
+                                         0 0 12px black;
+                }
+
+
+                
+                .Purple {
+                    margin: 5px;
+                    border: none;
+                    background-color: purple;
+                    color: white;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                        
+                .Purple:hover {
+                    background-color: purple;
+                    box-shadow: inset 0 0 12px rgb(75, 72, 72),
+                                         0 0 12px black;
+                }
+
+
+                .Black {
+                    margin: 5px;
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                        
+                .Black:hover {
+                    background-color: black;
+                    box-shadow: inset 0 0 12px rgb(75, 72, 72),
+                                         0 0 12px black;
+                }
+
+
+
+                .Blue {
+                    margin: 5px;
+                    border: none;
+                    background-color: blue;
+                    color: white;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+        
+                .Blue:hover {
+                    background-color: blue;
                     box-shadow: inset 0 0 12px rgb(75, 72, 72),
                                          0 0 12px black;
                 }
@@ -162,6 +218,36 @@ html {
     margin: 20px 0;
     box-shadow: 0 0 10px black;
 }
+img {
+    width: 100%;
+    padding: 0 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+.img {
+    width: 45%;
+    height: 50%;
+    text-align: center;
+}
+.twitter {
+    width:45%;
+    border-radius: 50%;
+}
+.whatsapp {
+    width: 50%;
+    border-radius: 50%;
+}
+.fb {
+    width: 40%;
+    border-radius: 50%;
+}
+.social {
+    display: flex;
+    text-align: center;
+    padding: 0 100px;
+}
+
 </style>
 
 
@@ -322,15 +408,31 @@ html {
         <a href="#Mogale"><button class="submit">Mogale</button></a>
 
     </div>
-
 </div>
 
+<!------- Royal Funeral Advert ------->
 
+<div class="Active">
+    <div class="img">
+        <a href="http://www.royalfuneralssa.co.za">
+            <div>
+                <img src="./Royal Funeral/IMG-20230707-WA0018.jpg" alt="">
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href="http://www.royalfuneralssa.co.za">
+            <button class="Blue">
+                View Plans
+            </button>
+        </a>
+    </div>
+</div>
 
 
         
 
-<!-------- Midrnand ------------------>
+<!-------- Midrand ------------------>
 
 <div class="Midrand">
 
@@ -3327,6 +3429,11 @@ html {
 
     <a href="#TembisaMall"><button class="submit">Tembisa Mall</button></a>
 
+    <a href="#TembisaLocal"><button class="submit">Tembisa Local</button></a>
+
+    <a href="#SwazInn"><button class="submit">Swaz Inn</button></a>
+
+
 </div>
 </div>
 
@@ -3411,71 +3518,651 @@ html {
                 </td>
             </tbody>
         </table>
+        
+        <a href="#Tembisa">
+            <button class=" places submit reg">Tembisa</button>
+        </a>
     </div>
 </div>
 
-<!--------------- Sangweni Taxis -------------------->
 
+<!------------------- Sangweni Tembisa ----->
 <div id="Sangweni" class="Active">
-<h1>Sangweni</h1>
-<div>
-    Coming Soon
-</div>
-</div>
+    <h2>
+        Sangweni taxi Rank 
+    </h2>
+    <div>
+        <a href="#EasternCape">
+            <button class="submit">
+                Eastern Cape
+            </button>
+        </a>
+        <a href="#Mozambique">
+            <button class="submit">
+                Mozambique
+            </button>
+        </a>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>  Name   </h3>
+                </td>
+                <td>
+                    <h3>.  Cost  .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Germiston
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Spirit View
+                </td>
+                <td>
+                    R30
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Van Riebeek
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Modderfontien
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Long Meadow
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Meadow dale
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Sebenza
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Midrand
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Centurion
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Shoprite Centurion
+                </td>
+                <td>
+                    R32
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Pretoria
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Alexander
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Woodmead
+                </td>
+                <td>
+                    R23
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    GreenStone
+                </td>
+                <td>
+                    R20
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Sandton
+                </td>
+                <td>
+                    R25
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Randburg
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Fourways
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Woodmead
+                </td>
+                <td>
+                    R24
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Diepsloot
+                </td>
+                <td>
+                    R30
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Cosmo City
+                </td>
+                <td>
+                    R28
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Car Center
+                </td>
+                <td>
+                    R22
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Johannesburg
+                </td>
+                <td>
+                    R26
+                </td>
+            </tbody>
+        </table>
+        
+        <a href="#Tembisa">
+            <button class=" places submit reg">Tembisa</button>
+        </a>
 
+<!-------- Sangweni Eastern Cape N3 --------->
 
+        <table>
+            <h2>Eastern Cape</h2>
+            <thead>
+                <h3>N3</h3>
+                <td>
+                    <h3>
+                        Name    .
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                          Cost   . 
+                    </h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Matatiele
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Kokstad
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Mountaliff
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mountfrere
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Qumbu
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Tsolo
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Mthatha
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+        </table>
+        
+        <a href="#Tembisa">
+            <button class=" places submit reg">Tembisa</button>
+        </a>
+
+<!-------- Sangweni Eastern Cape N1 --------->
+
+        <table id="EasternCape">
+            <h2>Eastern Cape</h2>
+            <thead>
+                <h3>N1</h3>
+                <td>
+                    <h3>
+                        Name    .
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                          Cost   . 
+                    </h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Mthatha
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Ngcobo
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Dutywa
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Gcuwa
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Ngqamakhwe
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Cofimvaba
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Queenstown
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Qonce
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    East London
+                </td>
+                <td>
+                    R650
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    P.E.
+                </td>
+                <td>
+                    R850
+                </td>
+            </tbody>
+            <table id="#Mozambique">
+                <h2>Mozambique</h2>
+                <thead>
+
+                    <h3>Call : 078 018 7502</h3>
+                    <td>
+                        <h3>
+                            Name    .
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                              Cost   . 
+                        </h3>
+                    </td>
+                </thead>
+                <tbody class="gray">
+                    <td>
+                        Malalani
+                    </td>
+                    <td>
+                        R350
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Mpumalanga
+                    </td>
+                    <td>
+                        R350
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Nyambani
+                    </td>
+                    <td>
+                        R800
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>
+                        Maputo
+                    </td>
+                    <td>
+                        R450
+                    </td>
+                </tbody>
+                <tbody class="gray">
+                    <td>
+                        Gaza
+                    </td>
+                    <td>
+                        R550
+                    </td>
+                </tbody>
+        </table>
+        
+        <a href="#Tembisa">
+            <button class=" places submit reg">Tembisa</button>
+        </a>
+    </div>
+</div>
 
 <!--------------- Birch Acres Taxis -------------------->
 
 <div id="Birch Acres" class="Active">
     <h1>Birch Acres</h1>
     <div>
-        Coming Soon
+        <table>
+            <thead>
+                <td>
+                    <h3>  Name   </h3>
+                </td>
+                <td>
+                    <h3>.  Cost  .</h3>
+                </td>
+            </thead>
+            <tbody>
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Sangweni
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Phomolong
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Rabasuthu
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Straight line
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Main line
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Oakmor
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Hospital View
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+        </table>
+        
+        <a href="#Tembisa">
+            <button class=" places submit reg">Tembisa</button>
+        </a>
+        
     </div>
+</div>
+
+<!----- Tembisa Local-->
+
+<div id="TembisaLocal" class="Active">
+    <h2>Tembisa Local</h3>
+    <div>
+        <table>
+            <thead>
+                <td>
+                    <h3>  Name   </h3>
+                </td>
+                <td>
+                    <h3>.  Cost  .</h3>
+                </td>
+            </thead>
+            <tbody class="gray">
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+            <tbody class="gray">
+                <td>
+                    Swaz Inn
+                </td>
+                <td>
+                    R13
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+        </table>
     </div>
+</div>
     
 
 
 
+<!----- Tembisa Local-->
 
-
-<!--------------- Phomolong Taxis -------------------->
-
-<div id="Phomolong" class="Active">
-    <h1>Phomolong</h1>
+<div id="SwazInn" class="Active">
+    <h2>Swaz Inn</h3>
     <div>
-        Coming Soon
+        <table>
+            <thead>
+                <td>
+                    <h3>  Name   </h3>
+                </td>
+                <td>
+                    <h3>.  Cost  .</h3>
+                </td>
+            </thead>
+            <tbody class="">
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+            <tbody>
+                <td>
+                    Mayibuye
+                </td>
+                <td>
+                    R13.50
+                </td>
+            </tbody>
+        </table>
     </div>
-    </div>
+</div>
 
-
-
-
-
-<!--------------- Tembisa Plaza Taxis -------------------->
-
-<div id="Plaza" class="Active">
-    <h1>Plaza</h1>
-    <div>
-        Coming Soon
-    </div>
-    </div>
-    
-
-
-
-<!--------------- Tembisa Mall Taxis -------------------->
-
-<div id="TembisaMall" class="Active">
-    <h1>Tembisa Mall</h1>
-    <div>
-        Comming Soon
-    </div>
-    </div>
 
 <!-------- More Options ---------------------->
     
-<!--
+
+<!---
 <div class="Active">
     <div>
         <h2>More Options</h2>
@@ -3496,11 +4183,48 @@ html {
         </div>
     </div>
 </div>
+
+<div class="Active">
+    <div>
+        <a href="">
+    </div>
+</div>
 -->
 
 
+<!-------- Social Medias ------->
 
+<div class="Active">
+    <div>
+        <h4>
+            follow us on
+        </h4>
+        <h3>
+            Social Media
+        </h3>
+    </div>
+    <div class="social">
 
+        <div>
+            <a href="">
+                <img class="twitter" src="/Social Media/1.jpeg" alt="">
+            </a>
+
+        </div>
+
+        <div>
+            <a href="">
+                <img class="whatsapp" src="/Social Media/2.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100093946479771">
+                <img class="fb" src="/Social Media/0.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
 
 </div>
 	<main/>
