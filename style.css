@@ -307,3 +307,91 @@ text-align: center;
         border-radius: 50%;
     }
 }
+
+.EduA {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+
+.EduB {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.EduD {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.EduE {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.EduF {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.EduG {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.EduH {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.Edu {
+    text-align: center;
+    background-color: rgb(0, 0, 255,0.5);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 1px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
