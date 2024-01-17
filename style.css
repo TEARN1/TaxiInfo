@@ -160,6 +160,7 @@ background-color: rgba(255, 177, 177, 0.2);
 padding: 10px;
 border: rgb(173, 173, 173) 1px solid;
 border-radius: 5px;
+display: none;
 }
 
 .Cvsub {
@@ -205,6 +206,7 @@ text-align: center;
     .CvA {
         margin: 0;
         padding: 3px;
+        display: none;
     }
     body {
         margin: 0;
@@ -212,12 +214,12 @@ text-align: center;
         background: rgb(255, 255, 255);
     }
     .Cvsub {
-        padding: 3px;
-        margin: 3px;
+        padding: 1px;
+        margin: 1px;
         width: 95%;
     }
     .submitYourCvdivdet {
-        padding: 3px;
+        padding: 1px;
         margin: 1px;
         overflow: scroll;
     }
@@ -225,6 +227,43 @@ text-align: center;
         width: 55%;
         border-radius: 50%;
     }
+    .EduA {
+        text-align: center;
+        background-color: rgb(0, 0, 255, 0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        display: none;
+    }
+    .EduB {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduD {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduE {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
 }
 
 
@@ -232,6 +271,7 @@ text-align: center;
     .CvA {
         margin: 0;
         padding: 3px;
+        display: none;
     }
     body {
         margin: 0;
@@ -252,6 +292,43 @@ text-align: center;
         width: 55%;
         border-radius: 50%;
     }
+    .EduA {
+        text-align: center;
+        background-color: rgb(0, 0, 255, 0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        display: none;
+    }
+    .EduB {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduD {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduE {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
 }
 
 
@@ -260,6 +337,7 @@ text-align: center;
     .CvA {
         margin: 2px;
         padding: 6px;
+        display: none;
     }
     body {
         margin: 2px;
@@ -280,6 +358,43 @@ text-align: center;
         width: 55%;
         border-radius: 50%;
     }
+    .EduA {
+        text-align: center;
+        background-color: rgb(0, 0, 255, 0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        display: none;
+    }
+    .EduB {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduD {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduE {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
 }
 
 
@@ -287,10 +402,11 @@ text-align: center;
     .CvA {
         margin: 2px;
         padding: 6px;
+        display: none;
     }
     body {
-        margin: 20px;
-        padding: 20px;
+        margin: 2px;
+        padding: 2px;
         background: rgb(255, 255, 255);
     }
     .Cvsub {
@@ -306,6 +422,42 @@ text-align: center;
         width: 55%;
         border-radius: 50%;
     }
+    .EduA {
+        text-align: center;
+        background-color: rgb(0, 0, 255, 0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        display: none;
+    }
+    .EduB {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduD {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .EduE {
+        text-align: center;
+        background-color: rgb(0, 0, 255,0.5);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
 }
 
 .EduA {
@@ -315,6 +467,7 @@ text-align: center;
     padding: 15px;
     margin: 1px;
     border-radius: 10px;
+    display: none;
 }
 
 
@@ -395,3 +548,49 @@ text-align: center;
 }
 
 
+.schoolpaper {
+    position: absolute;
+    background-color: white;
+    left: 1px;
+    color: black;
+    width: 99%;
+}
+
+.line{
+    background-color: rgb(59, 238, 68);
+}
+
+.red {
+    background-color: red;
+}
+
+.underline {
+    text-decoration: underline;
+    color: rgb(231, 52, 171);
+}
+
+.Score {
+    background-color: green;
+    border: none;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+} 
+
+.headNav {
+    margin: 20px;
+}
+
+.headNav button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(3, 255, 255);
+    border: none;
+    width: 30%;
+    padding: 10px;
+    margin: 0;
+}
+
+.headNav button:hover {
+    background-color: gray;
+    transition: .7 ease;
+}
