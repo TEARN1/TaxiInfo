@@ -1,10 +1,9 @@
-
 html {
     scroll-behavior: smooth;
 }
 body {
     padding: 10px;
-    background: rgb(255, 253, 253);
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
@@ -24,676 +23,213 @@ text-align: center;
 .twitter {
 width:45%;
 border-radius: 50%;
+transition: transform 0.3s ease;
 }
 .email {
 width: 20%;
 border-radius: 50%;
+transition: transform 0.3s ease;
 }
 .fb {
 width: 40%;
 border-radius: 50%;
+transition: transform 0.3s ease;
 }
 
 .night {
-    background-color: rgb(53, 3, 53);
+    background-color: rgba(147, 41, 104, 0.8);
     color: White;
+    backdrop-filter: blur(10px);
 }
 
 .Pinkwords {
 color: white;
-background: purple;
-
+background: rgba(255, 105, 180, 0.3);
 padding: 60px;
 border-radius: 20px;
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.2);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 
-/*  New School  */
 .line {
-background-color: rgb(255, 255, 255, 0.2);
-border: white 1px solid;
+background-color: rgba(255, 255, 255, 0.3);
+border: 1px solid rgba(255, 192, 203, 0.5);
 margin: 4px;
 }
 
-/* Phase One*/
 
 .PhaseOne {
-background-color: rgba(255, 255, 255, 0.1);
+background-color: rgba(255, 192, 203, 0.2);
 margin: 2px;
-border: gray 1px solid;
+border: 1px solid rgba(255, 255, 255, 0.3);
 padding: 20px;
-border-radius: 5px;
-box-shadow: 0 0 20px  black;
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
 }
 .PhaseOne:hover {
-background-color: rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 182, 193, 0.3);
 }
 
 .PhaseTwo {
-background-color: rgb(116, 1, 116, 0.7);
+background-color: rgba(255, 105, 180, 0.25);
 padding: 20px;
 margin: 2px;
-border: white 1px solid;
-border-radius: 5px;
-box-shadow: 0 0 20px  black;
+border: 1px solid rgba(255,255,255,0.3);
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
 }
 .PhaseTwo:hover {
-background-color: rgba(255, 255, 255, 0.7);
+background-color: rgba(255, 105, 180, 0.35);
 }
 
 .PhaseThree {
-background-color: rgba(126, 2, 109);
+background-color: rgba(219, 112, 147, 0.3);
 padding: 20px;
 margin: 2px;
-border: white 1px solid;
-border-radius: 5px;
-box-shadow: 0 0 20px  black;
+border: 1px solid rgba(255,255,255,0.3);
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
 }
 
 .PhaseThree:hover {
-background-color: rgb(255, 255, 255);
+background-color: rgba(219, 112, 147, 0.4);
 }
 
 
 .PhaseFour {
-background-color: rgb(0, 255, 255, 0.2);
+background-color: rgba(255, 182, 193, 0.25);
 padding: 20px;
 margin: 2px;
-border-radius: 5px;
-box-shadow: 0 0 20px  black;
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
 }
 
 .PhaseFour:hover {
-background-color: rgba(2, 134, 134, 0.2);
+background-color: rgba(255, 182, 193, 0.35);
 }
 
 .PhaseFive {
 justify-content: space-around;
 align-items: center;
-background-color: rgb(0, 255, 255, 0.2);
+background-color: rgba(255, 192, 203, 0.25);
 padding: 20px;
 margin: 2px;
-border-radius: 5px;
-box-shadow: 0 0 20px  black;
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
 }
 
 .PhaseFive:hover {
-background-color: rgba(2, 134, 134, 0.2);
+background-color: rgba(255, 192, 203, 0.35);
 }
 
 .Start {
-background-color: rgb(139, 17, 129);
+background-color: rgba(199, 21, 133, 0.8);
 padding: 10px;
-border: white 1px solid;
-border-radius: 5px;
+border: 1px solid rgba(255,255,255,0.3);
+border-radius: 15px;
+backdrop-filter: blur(5px);
 }
 
 footer {
 margin:10px 0 0 0;
 display: flex;
 text-align: center;
-background-color: white;
+background-color: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+border-radius: 15px;
 }
 
-.flex {
-display: flex;
-text-align: center;
-justify-content:center;
-}
-.flex div {
-margin: 20px 0;
-}
 
-.flex div .slogan {
-margin: -25px 0px 0px;
-margin-bottom: 40px; 
-}
 .flex div .slogan span {
-color: red;
+color: #ff69b4;
 font-size: 40px;
 }
 
 .CvA {
-background-color: rgba(255, 177, 177, 0.2);
+background-color: rgba(255, 255, 255, 0.2);
 padding: 10px;
 margin: 10px;
-border: rgb(173, 173, 173) 1px solid;
-border-radius: 5px;
+border: 1px solid rgba(255, 192, 203, 0.5);
+border-radius: 15px;
 display: none;
+backdrop-filter: blur(5px);
 }
 
 .Cvsub {
-background-color: rgba(255, 177, 177, 0.2);
+background-color: rgba(255, 255, 255, 0.2);
 padding: 20px;
 margin: 10px;
-border-radius: 10px;
+border-radius: 15px;
 width: 70%;
-border: rgb(173, 173, 173) 1px solid;
+border: 1px solid rgba(255, 192, 203, 0.5);
+backdrop-filter: blur(5px);
 }
+
 .submitYourCvdiv {
-background-color: rgba(255, 177, 177, 0.2);
+background-color: rgba(255, 255, 255, 0.2);
 padding: 10px;
 margin: 5px;
-border: rgb(173, 173, 173) 1px solid;
-}
-.submitYourCvdivdet {
-background-color: rgba(255, 255, 255);
-padding: 10px;
-margin: 5px;
-border: rgb(173, 173, 173) 1px solid;
+border: 1px solid rgba(255, 192, 203, 0.5);
 }
 
-.submitYourCvdivdet summary {
-background-color: rgba(255, 177, 177, 0.2);
-padding: 10px;
-margin: 5px;
-border: rgb(173, 173, 173) 1px solid;
+.socialImage img:hover {
+transform: scale(1.1);
+filter: drop-shadow(0 0 10px rgba(255,105,180,0.5));
 }
 
-.social {
-justify-content: center;
-text-align: center;
-}
-
-.socialImage {
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-}
-
-@media (max-width: 320px) {
-    .CvA {
-        margin: 0;
-        padding: 3px;
-        display: none;
-    }
-    body {
-        margin: 0;
-        padding: 2px;
-        background: rgb(255, 255, 255);
-    }
-    .Cvsub {
-        padding: 1px;
-        margin: 1px;
-        width: 95%;
-    }
-    .submitYourCvdivdet {
-        padding: 1px;
-        margin: 1px;
-        overflow: scroll;
-    }
-    .twitter {
-        width: 55%;
-        border-radius: 50%;
-    }
-    .EduA {
-        text-align: center;
-        background-color: rgb(0, 0, 255, 0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        display: none;
-    }
-    .EduB {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduD {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduE {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-
-}
-
-
-@media (max-width: 375px) {
-    .CvA {
-        margin: 0;
-        padding: 3px;
-        display: none;
-    }
-    body {
-        margin: 0;
-        padding: 2px;
-        background: rgb(255, 255, 255);
-    }
-    .Cvsub {
-        padding: 3px;
-        margin: 3px;
-        width: 95%;
-    }
-    .submitYourCvdivdet {
-        padding: 3px;
-        margin: 1px;
-        overflow: scroll;
-    }
-    .twitter {
-        width: 55%;
-        border-radius: 50%;
-    }
-    .EduA {
-        text-align: center;
-        background-color: rgb(0, 0, 255, 0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        display: none;
-    }
-    .EduB {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduD {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduE {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-
-}
-
-
-
-@media (max-width: 425px) {
-    .CvA {
-        margin: 2px;
-        padding: 6px;
-        display: none;
-    }
-    body {
-        margin: 2px;
-        padding: 5px;
-        background: rgb(255, 255, 255);
-    }
-    .Cvsub {
-        padding: 6px;
-        margin: 3px;
-        width: 95%;
-    }
-    .submitYourCvdivdet {
-        padding: 3px;
-        margin: 1px;
-        overflow: scroll;
-    }
-    .twitter {
-        width: 55%;
-        border-radius: 50%;
-    }
-    .EduA {
-        text-align: center;
-        background-color: rgb(0, 0, 255, 0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        display: none;
-    }
-    .EduB {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduD {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduE {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-
-}
-
-
-@media (max-width: 768px) {
-    .CvA {
-        margin: 2px;
-        padding: 6px;
-        display: none;
-    }
-    body {
-        margin: 2px;
-        padding: 2px;
-        background: rgb(255, 255, 255);
-    }
-    .Cvsub {
-        padding: 6px;
-        margin: 3px;
-        width: 95%;
-    }
-    .submitYourCvdivdet {
-        padding: 3px;
-        margin: 1px;
-    }
-    .twitter {
-        width: 55%;
-        border-radius: 50%;
-    }
-    .EduA {
-        text-align: center;
-        background-color: rgb(0, 0, 255, 0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        display: none;
-    }
-    .EduB {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduD {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-    .EduE {
-        text-align: center;
-        background-color: rgb(0, 0, 255,0.5);
-        color: rgb(255, 255, 255);
-        padding: 1px;
-        margin: 1px;
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-}
-
-.EduA {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    display: none;
-}
-
-
-.EduB {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.EduD {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.EduE {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.EduF {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.EduG {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.EduH {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.Edu {
-    text-align: center;
-    background-color: rgb(0, 0, 255,0.5);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-
-.schoolpaper {
-    position: absolute;
-    background-color: white;
-    left: 1px;
-    color: black;
-    width: 99%;
-}
-
-.line{
-    background-color: rgb(59, 238, 68);
-}
-
-.red {
-    background-color: red;
-}
 
 .underline {
-    text-decoration: underline;
-    color: rgb(231, 52, 171);
+text-decoration: underline;
+color: #ff69b4;
 }
 
 .Score {
-    background-color: green;
-    border: none;
-    padding: 20px;
-    color: white;
-    border-radius: 15px;
-} 
-
-.headNav {
-    margin: 20px;
-    display: flex;
-    cursor: pointer;
+background-color: #ff69b4;
+border: none;
+padding: 20px;
+color: white;
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .headNav div {
-    background-color: rgb(0, 0, 0);
-    color: rgb(3, 255, 255);
-    border: none;
-    width: 30%;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-}
-
-.headNav div:hover {
-    background-color: gray;
-    transition: .7 ease;
+background-color: rgba(0, 0, 0, 0.7);
+color: #ffb6c1;
+border: none;
 }
 
 #Transport  {
-    background-color: rgb(139, 17, 129);
-    color: white;
+background-color: rgba(199, 21, 133, 0.8);
+color: white;
 }
 
 
 #submit {
-    padding: 20px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: .7s;
+padding: 20px;
+background-color: #ff69b4;
+color: white;
+border: none;
+border-radius: 10px;
+transition: .7s;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 #sub {
-    position: fixed;
-    text-align: center;
-    background-color: rgb(25, 234, 209);
-    width: 60%;
-    height: fit-content;
-    padding: 40px;
-    top: 10%;
-    left: 20%;
-    border-radius: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: .7s;
-    display: none;
+background-color: rgba(255, 255, 255, 0.9);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 192, 203, 0.5);
 }
 
-#sub #subClose {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    transition: .7s;
-}
-
-#submit:hover {
-    background-color: white;
-    color: green;
-    border: 2px solid green;
-    transition: .7s;
-}
-
-#sub #subClose:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 0, 0);
-    border: 1px solid rgb(255, 0, 0);
-    transition: .7s;
-}
-
-input {
-    margin: 5px;
-    padding: 5px;
-}
-
-#subTwo {
-    text-align: center;
-    display: none;
-}
-
-#subWhere {
-    text-align: center;
-}
-
-#subDidYouYes {
-    padding: 20px;
-    margin: 10px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: .7s;
-}
-
-#subDidYouYes:hover {
-    background-color: white;
-    color: green;
-    border: 2px solid green;
-    transition: .7s;
-}
-
-#subDidYouNo {
-    padding: 20px;
-    margin: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: .7s;
-}
-
-#subDidYouNo:hover {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
-    transition: .7s;
+/* Updated media queries with pink theme */
+@media (max-width: 768px) {
+    .EduB, .EduD, .EduE {
+        background-color: rgba(255, 105, 180, 0.3);
+    }
 }
