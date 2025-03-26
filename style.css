@@ -66,10 +66,34 @@ body {
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Media query for smaller screens (example: tablets and phones) */
 @media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .flex {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
     .EduC {
         margin-left: 10px; /* Reduce indentation on smaller screens */
         width: calc(100% - 10px); /* Adjust width to account for indentation */
+    }
+}
+
+/* Additional media query for very small screens (example: small phones) */
+@media (max-width: 400px) {
+    body {
+        font-size: 12px; /* Further adjust font size for very small screens */
+    }
+    .flex {
+        padding: 10px; /* Further reduce padding for very small screens */
     }
 }
